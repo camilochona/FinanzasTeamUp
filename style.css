@@ -1,0 +1,309 @@
+:root {
+    --dark-blue: #011435;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto Serif', sans-serif;
+}
+header {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 29px;
+    background-color: var(--dark-blue);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.header-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav--container--items {
+    height: 0;
+    overflow: hidden;
+}
+.nav--container--items:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ;
+}
+
+.nav-container--img img{
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+}
+.main-section-descripcion {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    flex-direction: column;
+}
+.main-section-descripcion h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+.section-descripcion-image {
+    display: flex;
+    justify-content: center;
+}
+.section-descripcion-image img{ 
+    width: 70%;
+    height: 90%;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.descripcion {
+    max-width: 900px;
+    font-size: 1.5rem;
+    line-height: 18px;
+    margin: 20px 30px;
+}
+.descripcion-list {
+    display: grid;
+    grid-template-rows: repeat(4, 20px);
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 30px;
+}
+.descripcion-list--item {
+    display: flex;
+    align-items: center;    
+    font-size: 1.5rem;
+}
+.descripcion-list div img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.main-section-planes {
+    width: 100%;
+    height: auto;    
+    margin: 50px 0 50px;
+}
+.planes-titulo {
+    color: var(--dark-blue);
+}
+.main-section-planes h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.section-planes{
+    width: 250px;
+    height: 300px;
+    transform-style: preserve-3d;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 50px;    
+    transition: transform 1s linear;
+}
+.section-planes:hover {
+    transform: rotateY(180deg);
+    transition: transform 0.5s linear;
+}
+.planes {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.planes.planes-front {
+    background-image: url("./img/planes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+.planes.planes-front2 {
+    background-image: url("./img/planes2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #D3CECE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+.planes-container-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.planes.planes-front img {
+    width: 50px;
+    height: 50px;
+}
+.planes.planes-front2 img {
+    width: 50px;
+    height: 50px;
+}
+.planes.planes-back {
+    background: #2e3b3e;
+    transform: rotateY(180deg);
+    color: #D3CECE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+.planes.planes-back h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.image-descripcion {
+    width: 60%;
+    height: 100px;
+    margin: 20px auto;
+}
+.section-planes p {
+    margin: 10px 30px;
+    text-align: center;
+}
+.main-section-testimonios {
+    width: 100%;
+    height: auto;
+}
+.main-section-testimonios h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--dark-blue);
+}
+.section-testimonios {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    
+}
+.section-testimonios article .descripcion  {
+    line-height: 18px;    
+    font-size: 1.5rem;
+}
+.section-testimonios article p {
+    width: 85%;
+    margin: 0 auto;
+    text-align: start;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    line-height: 10px;
+    text-align: center;
+}
+.post-container img {
+    margin: 20px 0;
+    width: 45%;
+    height: 40%;
+    border-radius: 50%;
+}
+
+.testimonios-container {
+    width: 250px;
+    height: 200px;
+}
+.testimonios-container img {
+    width: 70%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.testimonio-container1,
+.testimonio-container2,
+.testimonio-container3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.testimonio-container1 {    
+    background-image: url("./img/testimonio1.jpg");
+}
+.testimonio-container2 {    
+    background-image: url("./img/testimonio2.jpg");
+}
+.testimonio-container3 {    
+    background-image: url("./img/testimonio3.jpg");
+}
+.testimonio-container1,
+.testimonio-container2,
+.testimonio-container3 {   
+    transition: transform 1s
+}
+.testimonio-container1:hover,
+.testimonio-container2:hover,
+.testimonio-container3:hover {
+    transform: scale(1.1);
+    transition: transform 1s ;
+}
+footer {
+    width: 100%;
+    height: auto;
+    background: var(--dark-blue);
+}
+.footer-container-contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 1.5rem;
+    gap: 20px;
+}
+.container-contact-item,
+.container-contact-item1 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 0px;
+}
+.container-contact-item img,
+.container-contact-item1 img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.footer-container-contact div:nth-child(3){
+    margin-bottom: 50px;
+}
+.image-contact1{    
+    margin-right: 20px;
+}
+.image-contact2 {
+    margin-left: 20px;
+}
