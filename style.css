@@ -1,7 +1,6 @@
 :root {
     --dark-blue: #011435;
 }
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -98,6 +97,9 @@ ul{
     margin-top: 20px;
     border-radius: 8px;
 }
+.section-descripcion-image img:hover {
+    box-shadow: 0 14px 28px rgba(1,20,53,0.25), 0 10px 10px rgba(1,20,53,0.22);
+}
 .descripcion {
     max-width: 900px;
     font-size: 1.5rem;
@@ -142,11 +144,15 @@ ul{
     position: relative;
     margin: 0 auto;
     margin-bottom: 50px;    
-    transition: transform 1s linear;
+    transition: transform 1s linear;    
+    box-shadow: 0 5px 5px rgba(1,20,53,0.25), 0 5px 5px rgba(1,20,53,0.22);
+    border-radius: 20px;
 }
 .section-planes:hover {
     transform: rotateY(180deg);
-    transition: transform 0.5s linear;
+    transition: transform 0.5s linear;  
+    box-shadow: 0 0 0 rgba(1,20,53,0.25), 0 0 0 rgba(1,20,53,0.22);
+    
 }
 .planes {
     width: 100%;
@@ -281,6 +287,12 @@ ul{
     border-radius: 50%;
     margin: 0 auto;
     margin-bottom: 30px;
+    
+}
+.testimonio-container1:hover,
+.testimonio-container2:hover,
+.testimonio-container3:hover {
+    box-shadow: 0 3px 3px rgba(1,20,53,0.25), 0 5px 5px rgba(1,20,53,0.22);
 }
 .testimonio-container1 {    
     background-image: url("./img/testimonio1.jpg");
