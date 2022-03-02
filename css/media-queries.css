@@ -28,6 +28,14 @@
     .footer-container-contact div:nth-child(3){
         margin-bottom: 0;
     }
+    .menu-down {
+        overflow: hidden;
+        height: 0;
+    }
+    .nav-container--img {
+        position: static;
+        margin: 0;
+    }
 }
 @media (min-width: 1024px) {
     .section-testimonios {
